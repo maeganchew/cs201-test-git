@@ -1,2 +1,121 @@
+Last login: Wed Aug 22 00:05:27 on ttys000
+Maegans-MacBook-Pro:~ maegan$ git --version
+git version 2.16.2
+Maegans-MacBook-Pro:~ maegan$ git --version
+git version 2.18.0
+Maegans-MacBook-Pro:~ maegan$ pwd
+/Users/maegan
+Maegans-MacBook-Pro:~ maegan$ cd Desktop
+Maegans-MacBook-Pro:Desktop maegan$ mkdir cs201
+Maegans-MacBook-Pro:Desktop maegan$ cd cs201
+Maegans-MacBook-Pro:cs201 maegan$ mkdir test-git
+Maegans-MacBook-Pro:cs201 maegan$ cd test-git/
+Maegans-MacBook-Pro:test-git maegan$ git clone https://github.com/maeganchew/cs201-test-git.git
+Cloning into 'cs201-test-git'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+Maegans-MacBook-Pro:test-git maegan$ ls
+cs201-test-git
+Maegans-MacBook-Pro:test-git maegan$ mv cs201-test-git/ ..
+Maegans-MacBook-Pro:test-git maegan$ ls
+Maegans-MacBook-Pro:test-git maegan$ cd ..
+Maegans-MacBook-Pro:cs201 maegan$ ls
+cs201-test-git	test-git
+Maegans-MacBook-Pro:cs201 maegan$ rm test-git/
+rm: test-git/: is a directory
+Maegans-MacBook-Pro:cs201 maegan$ rm -R test-git/
+Maegans-MacBook-Pro:cs201 maegan$ ls
+cs201-test-git
+Maegans-MacBook-Pro:cs201 maegan$ cd cs201-test-git/
+Maegans-MacBook-Pro:cs201-test-git maegan$ ls
+README.md
+Maegans-MacBook-Pro:cs201-test-git maegan$ echo "Name: Maegan Chew" >> info.txt
+Maegans-MacBook-Pro:cs201-test-git maegan$ git add info.txt 
+Maegans-MacBook-Pro:cs201-test-git maegan$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   info.txt
+
+Maegans-MacBook-Pro:cs201-test-git maegan$ git commit -m "personal info"
+[master 770a8ca] personal info
+ Committer: Maegan Chew <maegan@Maegans-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 info.txt
+Maegans-MacBook-Pro:cs201-test-git maegan$ git --global user.name
+unknown option: --global
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+Maegans-MacBook-Pro:cs201-test-git maegan$ git user.name
+git: 'user.name' is not a git command. See 'git --help'.
+Maegans-MacBook-Pro:cs201-test-git maegan$ git config user.name
+Maegan Chew
+Maegans-MacBook-Pro:cs201-test-git maegan$ git config user.email
+Maegans-MacBook-Pro:cs201-test-git maegan$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/maeganchew/cs201-test-git.git
+   42b1fb3..770a8ca  master -> master
+Maegans-MacBook-Pro:cs201-test-git maegan$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/maeganchew/cs201-test-git
+   770a8ca..84f8cd4  master     -> origin/master
+Updating 770a8ca..84f8cd4
+Fast-forward
+ info.txt | 1 +
+ 1 file changed, 1 insertion(+)
+Maegans-MacBook-Pro:cs201-test-git maegan$ cat info.txt 
 Name: Maegan Chew
 other things
+Maegans-MacBook-Pro:cs201-test-git maegan$ vim info.txt 
+
+info info
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
